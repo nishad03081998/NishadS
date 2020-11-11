@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taj Redesign Project | Nishad</title>
+
+    <link rel="stylesheet" href="../index.css" />
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="bg-white">
+        <div class="container-fluid px-0" style="background-color: #f3f3f3 !important;">
+            <div class="container-xl">
+                <section>
+                    <div class="d-flex">
+                        <div>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb my-4">
+                                    <li class="breadcrumb-item"><a href="../../index.html#nav-hero-section">Nishad</a></li>
+                                    <li class="breadcrumb-item"><a href="../../index.html#portfolio-project">Projects</a></li>
+                                    <li class="breadcrumb-item active" aria-current="Taj">Taj_Redesign_Project</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="my-3 py-3 ml-auto">
+                            <a href="https://www.behance.net/nishads3" class="mx-2" target="_blank"> <img
+                                src="../../assets/icons/behance-logo 1.png" alt=""></a>
+                        <a href="https://dribbble.com/NishadS" class="mx-2" target="_blank"> <img
+                                src="../../assets/icons/dribbble-logo 1.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/nishad-s-1384b5189" class="mx-2" target="_blank"> <img
+                                src="../../assets/icons/linkedin 1.png" alt=""></a>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <img src="../../assets/case_study/TAJ_REDESIGN_PROJECT.png" class="img-fluid" id="case1" alt="Taj Redesign Project">
+
+                        <!-- The Modal -->
+                        <div id="case1_Modal" class="modal">
+                          <span class="close">&times;</span>
+                          <img class="modal-content" id="img_1">
+                          <div id="caption"></div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <section class="container-xl">
+            <div class="d-flex justify-content-center my-5">
+                <a class="btn custom-btn-case pt-2" href="../../index.html#taj">Back to Project</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        var modal = document.getElementById("case1_Modal");
+        var img = document.getElementById("case1");
+        var modalImg = document.getElementById("img_1");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
+</body>
+
+</html>
