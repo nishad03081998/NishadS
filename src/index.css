@@ -693,7 +693,7 @@ body::-webkit-scrollbar {
   /* 100% Image Width on Smaller Screens */
   @media (max-width: 767px){
     .modal-content {
-      max-width: 85% !important;
+      max-width: 75% !important;
     }
   }
 
