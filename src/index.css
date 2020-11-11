@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
     color: #000000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .hero-heading {
         font-size: 48px !important;
     }
@@ -75,7 +75,7 @@ body::-webkit-scrollbar {
     padding-top: 1rem !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .projects-mobile-layout-1 {
         display: flex !important;
         flex-direction: column !important;
@@ -129,7 +129,7 @@ body::-webkit-scrollbar {
     color: #ee2618 !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .project-title {
         font-size: 1.25rem !important;
     }
@@ -153,12 +153,12 @@ body::-webkit-scrollbar {
     font-style: normal !important;
     font-weight: normal !important;
     font-size: 16px !important;
-    line-height: 170% !important;
+    line-height: 185% !important;
     letter-spacing: 0.02em !important;
     color: #000000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .story-content {
         font-size: 14px !important;
     }
@@ -192,7 +192,7 @@ body::-webkit-scrollbar {
     color: #8E8E8E !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .copyright-content {
         font-size: 12px !important;
     }
@@ -227,7 +227,7 @@ body::-webkit-scrollbar {
     width: 25% !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .follow-icons {
         width: 50% !important;
     }
@@ -246,7 +246,7 @@ body::-webkit-scrollbar {
     background-color: #EA5C52 !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .custom-btn-normal {
         font-size: 12px !important;
         width: 161px !important;
@@ -268,7 +268,7 @@ body::-webkit-scrollbar {
     line-height: 170% !important;
     color: #ea5c52 !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .ping {
         font-size: 16px !important;
     }
@@ -279,12 +279,12 @@ body::-webkit-scrollbar {
 
 .hr-text {
     overflow: hidden;
-    text-align: left;
+    text-align: left !important;
 }
 
 .hr-text:before,
 .hr-text:after {
-    background-color: #d2d2d2;
+    background-color: #f0f0f0;
     content: "";
     display: inline-block;
     height: 3px;
@@ -308,12 +308,12 @@ body::-webkit-scrollbar {
 
 .hr-text-1 {
     overflow: hidden;
-    text-align: left;
+    text-align: left !important;
 }
 
 .hr-text-1:before,
 .hr-text-1:after {
-    background-color: #d2d2d2;
+    background-color: #f0f0f0;
     content: "";
     display: inline-block;
     height: 3px;
@@ -332,6 +332,17 @@ body::-webkit-scrollbar {
     margin-right: -50%;
 }
 
+@media (max-width: 767px) {
+    .hr-text, .hr-text-1 {
+        text-align: center !important;
+    }
+    .hr-text-1:before, .hr-text-1:after, .hr-text:after, .hr-text:before {
+        left: 0em !important;
+        right: 0em !important;
+        margin: 0% !important;
+        width: 0% !important;
+    }
+}
 
 /* mobile menu */
 
