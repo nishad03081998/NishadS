@@ -218,6 +218,13 @@ body::-webkit-scrollbar {
     border-color: black !important;
 }
 
+@media (max-width: 767px) {
+    .back-top {
+        width: 343px !important;
+        height: 46px !important;
+    }
+}
+
 .back-top:hover {
     color: #ffffff !important;
     background-color: #000000 !important;
@@ -268,11 +275,13 @@ body::-webkit-scrollbar {
     line-height: 170% !important;
     color: #ea5c52 !important;
 }
+
 @media (max-width: 767px) {
     .ping {
         font-size: 16px !important;
     }
 }
+
 .ping:hover {
     color: #ee2618 !important;
 }
@@ -333,10 +342,16 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 767px) {
-    .hr-text, .hr-text-1 {
+
+    .hr-text,
+    .hr-text-1 {
         text-align: center !important;
     }
-    .hr-text-1:before, .hr-text-1:after, .hr-text:after, .hr-text:before {
+
+    .hr-text-1:before,
+    .hr-text-1:after,
+    .hr-text:after,
+    .hr-text:before {
         left: 0em !important;
         right: 0em !important;
         margin: 0% !important;
