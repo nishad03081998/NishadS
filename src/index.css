@@ -168,9 +168,9 @@ body::-webkit-scrollbar {
 }
 
 .footer-email {
-    font-family: Eksell Display;
+    font-family: 'eksell_displaymedium';
     font-style: normal !important;
-    font-weight: 550 !important;
+    font-weight: medium !important;
     font-size: 40px !important;
     line-height: 140% !important;
     letter-spacing: 0.03em !important;
