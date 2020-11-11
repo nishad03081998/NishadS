@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nishad | Portfolio</title>
 
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/Logo.png">
+
     <!-- External Css  -->
     <link rel="stylesheet" href="./src/index.css" />
+    <link rel="stylesheet" href="./src/css/aos.css">
+    <link rel="stylesheet" href="./src/css/magnific-popup.css">
+    <link rel="stylesheet" href="./src/css/jquery-ui.css">
+    <link rel="stylesheet" href="./src/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./src/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./src/css/aos.css">
+    <link rel="stylesheet" href="./src/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="./src/fonts/icomoon/style.css">
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -35,21 +45,33 @@
             <div class="container-xl">
                 <!-- Navbar -->
 
+                <div class="site-mobile-menu">
+                    <div class="site-mobile-menu-header">
+                        <div class="site-mobile-menu-close mt-3">
+                            <span
+                                class="js-menu-toggle text-center icon-close2 rounded text-dark px-2 pt-1 pb-2"
+                                style="font-size: 1.25rem !important;"></span>
+                        </div>
+                    </div>
+                    <div class="site-mobile-menu-body scroll"></div>
+                    
+                </div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-sm-4">
                     <a class="navbar-brand" href="index.html">
                         <img src="./assets/images/Logo.png" width="auto" height="auto" alt="" loading="lazy">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button> -->
+                    <div class="col-2 d-inline-block d-xl-none ml-md-0 ml-auto py-3"
+                        style="position: relative; bottom: 5px;"><a href="#"
+                            class="site-menu-toggle js-menu-toggle text-dark"><span class="icon-menu h3"></span></a>
+                    </div>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active mx-2">
-                                <a class="nav-link" href="index.html">Portfolio<span
-                                        class="sr-only">(current)</span></a>
+                        <ul class="navbar-nav js-clone-nav ml-auto">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="index.html">Portfolio</a>
                             </li>
                             <li class="nav-item mx-2">
                                 <a class="nav-link" href="#about">About</a>
@@ -59,7 +81,15 @@
                             </li>
                             <li class="nav-item mx-2">
                                 <a class="nav-link" href="#contact">Contact</a>
-                            </li>
+                            </li>  
+                             <div class="d-flex justify-content-around follow-icons d-block d-sm-block d-md-none mx-auto py-3">
+                                 <a href="https://www.behance.net/nishads3" target="_blank"> <img
+                                         src="./assets/icons/behance-logo 1.png" alt=""></a>
+                                 <a href="https://dribbble.com/NishadS" target="_blank"> <img
+                                         src="./assets/icons/dribbble-logo 1.png" alt=""></a>
+                                 <a href="https://www.linkedin.com/in/nishad-s-1384b5189" target="_blank"> <img
+                                         src="./assets/icons/linkedin 1.png" alt=""></a>
+                             </div>
                         </ul>
                     </div>
                 </nav>
@@ -80,9 +110,7 @@
                                 </p>
                                 <div class="my-5">
                                     <a href="#portfolio-project"
-                                        class="btn custom-btn-normal px-lg-5 rounded-lg py-2"><u>
-                                            Check out my
-                                            work</u></a>
+                                        class="btn custom-btn-normal px-lg-5 rounded-lg py-2">Check out my work</a>
                                     <a href="#contact" class="btn ping border-0 rounded-lg py-2 mx-4">Ping
                                         me</a>
                                 </div>
@@ -120,7 +148,7 @@
                             project was to apply the UX
                             principles that I have learnt and to impove the user experience of the current website.
                         </p>
-                        <a href="" class="project-link">View Case Study 
+                        <a href="" class="project-link">View Case Study
                             <img src="./assets/icons/Arrow 1.png" class="mx-3" alt="">
                         </a>
                     </div>
@@ -180,7 +208,7 @@
             </h2>
             <div class="row">
                 <div class="col-md-6">
-                    
+
                     <p class="mt-5 story-content">
                         I’m a computer science engineering graguate.
                         During my second semester of engineering, I happened to attend a workshop on User Interface
@@ -238,6 +266,19 @@
             <p class="copyright-content pt-0"> Icons courtesy of FlatIcon.com</p>
         </div>
     </div>
+
+
+    <!-- Custom Js files -->
+    <script src="./src/js/jquery-3.3.1.min.js"></script>
+    <script src="./src/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="./src/js/jquery-ui.js"></script>
+    <script src="./src/js/popper.min.js"></script>
+    <script src="./src/js/owl.carousel.min.js"></script>
+    <script src="./src/js/jquery.stellar.min.js"></script>
+    <script src="./src/js/jquery.countdown.min.js"></script>
+    <script src="./src/js/jquery.magnific-popup.min.js"></script>
+    <script src="./src/js/aos.js"></script>
+    <script src="./src/js/mainFile.js"></script>
 </body>
 
 </html>

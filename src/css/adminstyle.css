@@ -1,0 +1,62 @@
+body{
+  background-color: #f2f2f2;
+  margin-top: 10px;
+}
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 15% ; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background: linear-gradient(180deg, #EA1D24 0%, #FF6B70 100%);/* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  text-decoration: none;
+  text-align: center;
+  border-radius: 20px 0px 0px 20px;
+  font-size: 15pt;
+  color: white;
+  display: block;
+  margin: 10px 0px 10px 20px;
+  padding: 3px;
+}
+.fixed {  
+  position: relative;
+  bottom: -50%;
+  text-decoration: none;
+  border-radius: 20px 0px 0px 20px;
+  text-align: center;
+  font-size: 15pt;
+  color: #818181;  
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: black;
+  background-color: white;
+}
+.addrep{
+  text-decoration: none;
+  margin-top: 50px; 
+  height: 50px;
+  width: 100%;
+  font-size: 15pt;
+  padding: 5px;
+  border-radius: 50px;
+  background: linear-gradient(180deg, #EA1D24 0%, #FF6B70 100%);/* Black */
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 10px;}
+  div{font-size: 10px;}
+}
+
+
