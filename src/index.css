@@ -732,7 +732,7 @@ body::-webkit-scrollbar {
 }
 @media (min-width: 720px) and (max-width: 1024px) and (orientation: landscape) {
     .hero-img {
-        left: 1rem !important;
+        left: 5rem !important;
     }
     .about-img {
         left: 1rem !important;
