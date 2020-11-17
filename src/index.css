@@ -72,8 +72,10 @@ body::-webkit-scrollbar {
 
 .project-margin {
     margin-bottom: 2.5rem !important;
-    padding-top: 1rem !important;
+    padding-top: 2rem !important;
 }
+
+
 
 @media (max-width: 767px) {
     .projects-mobile-layout-1 {
@@ -101,6 +103,7 @@ body::-webkit-scrollbar {
     line-height: 140% !important;
     color: #272727 !important;
 }
+
 .project-title:hover {
     color: #000000 !important;
 }
@@ -614,36 +617,46 @@ body::-webkit-scrollbar {
     border-radius: 5px;
     cursor: zoom-in;
     transition: 0.3s;
-  }
-  
-  #case1:hover {opacity: 0.975;}
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: static; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 10px; /* Location of the box */
+}
+
+#case1:hover {
+    opacity: 0.975;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: static;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 10px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
     overflow: scroll !important;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (image) */
-  .modal-content {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
     margin: auto;
     /* display: block; */
     width: auto;
     max-width: 4rem;
     overflow: scroll !important;
-  }
-  
-  /* Caption of Modal Image */
-  #caption {
+}
+
+/* Caption of Modal Image */
+#caption {
     margin: auto;
     display: block;
     width: 80%;
@@ -652,28 +665,39 @@ body::-webkit-scrollbar {
     color: #ccc;
     padding: 10px 0;
     height: 150px;
-  }
-  
-  /* Add Animation */
-  .modal-content, #caption {  
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
     animation-duration: 0.6s;
-  }
-  
-  @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .close {
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
     position: fixed;
     top: 15px;
     right: 35px;
@@ -681,40 +705,111 @@ body::-webkit-scrollbar {
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #fff !important;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  /* 100% Image Width on Smaller Screens */
-  @media (max-width: 767px){
+}
+
+/* 100% Image Width on Smaller Screens */
+@media (max-width: 767px) {
     .modal-content {
-      max-width: 75% !important;
+        max-width: 75% !important;
     }
-  }
+}
 
-  .hero-img {
-      position: relative !important;
-      left: 3.65rem !important;
-  }
+.hero-img {
+    position: relative !important;
+    left: 3.65rem !important;
+}
 
-  .about-img {
-      position: relative !important;
-      left: 3.5rem !important;
-  }
-@media (min-width: 720px) and (max-width: 1024px) {
+.about-img {
+    position: relative !important;
+    left: 3.5rem !important;
+}
+@media (min-width: 720px) and (max-width: 1024px) and (orientation: landscape) {
     .hero-img {
         left: 1rem !important;
-    }   
+    }
     .about-img {
         left: 1rem !important;
     }
 }
-  .bg-nav-custom {
-      background-color: #f3f3f3 !important;
-      opacity: 0.85 !important;
-  }
+
+@media (min-width: 1025px) and (max-width: 1360px) {
+    .hero-img {
+        left: 1rem !important;
+    }
+
+    .about-img {
+        left: 1rem !important;
+    }
+    .hero-img-xl {
+        position: relative !important;
+        left: 1rem !important;
+    }
+}
+
+.bg-nav-custom {
+    background-color: #f3f3f3 !important;
+    opacity: 0.85 !important;
+}
+
+#button {
+    display: inline-block;
+    background-color: #1a1a2e;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\f0d8";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.project-img {
+    width: 394px !important;
+    height: 225px !important;
+    border-radius: 20px !important;
+    transition: width 1s, height 1s;
+}
+
+.project-img:hover {
+    width: 470px !important;
+    height: 270px !important;
+    overflow: hidden !important;
+}
